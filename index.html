@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboRDP | Blazing Fast Remote Desktop Solutions</title>
+    <style>
+        /* Modern & Clean CSS */
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --dark: #1f2937;
+            --light: #f9fafb;
+            --accent: #10b981;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--light);
+        }
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: var(--secondary);
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        .features {
+            padding: 4rem 0;
+            background: var(--light);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .feature-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+        .pricing {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .pricing-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+        .price span {
+            font-size: 1rem;
+            color: var(--dark);
+        }
+        .testimonials {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        footer {
+            background: #111827;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">TurboRDP</div>
+                <a href="#pricing" class="cta-button">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>High-Speed RDP for Seamless Remote Work</h1>
+            <p>Get ultra-low latency, dedicated resources, and 24/7 support with our enterprise-grade Remote Desktop solutions.</p>
+            <a href="#pricing" class="cta-button">View Plans →</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 style="text-align: center;">Why Choose TurboRDP?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="https://via.placeholder.com/60" alt="Speed Icon">
+                    <h3>Blazing Fast SSD</h3>
+                    <p>NVMe SSD storage with 1Gbps+ bandwidth for lag-free performance.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://via.placeholder.com/60" alt="Globe Icon">
+                    <h3>Global Locations</h3>
+                    <p>Servers in US, UK, EU, and Asia for low-latency connections.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://via.placeholder.com/60" alt="Shield Icon">
+                    <h3>Military-Grade Security</h3>
+                    <p>DDoS protection, SSL encryption, and isolated environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <p>No hidden fees. Cancel anytime.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">$9.99<span>/mo</span></div>
+                    <ul style="text-align: left; list-style: none; padding: 0;">
+                        <li>✓ 4GB RAM</li>
+                        <li>✓ 50GB SSD</li>
+                        <li>✓ 1Gbps Bandwidth</li>
+                        <li>✓ 24/7 Support</li>
+                    </ul>
+                    <a href="#" class="cta-button" style="display: block; margin-top: 1.5rem;">Buy Now</a>
+                </div>
+                <div class="pricing-card" style="border: 2px solid var(--primary);">
+                    <h3>Pro (BEST VALUE)</h3>
+                    <div class="price">$19.99<span>/mo</span></div>
+                    <ul style="text-align: left; list-style: none; padding: 0;">
+                        <li>✓ 8GB RAM</li>
+                        <li>✓ 100GB SSD</li>
+                        <li>✓ 2Gbps Bandwidth</li>
+                        <li>✓ Priority Support</li>
+                    </ul>
+                    <a href="#" class="cta-button" style="display: block; margin-top: 1.5rem;">Buy Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">$39.99<span>/mo</span></div>
+                    <ul style="text-align: left; list-style: none; padding: 0;">
+                        <li>✓ 16GB RAM</li>
+                        <li>✓ 200GB SSD</li>
+                        <li>✓ 5Gbps Bandwidth</li>
+                        <li>✓ Dedicated IP</li>
+                    </ul>
+                    <a href="#" class="cta-button" style="display: block; margin-top: 1.5rem;">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Trusted by Thousands</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"TurboRDP reduced our latency by 80%. Perfect for our remote team!"</p>
+                    <p><strong>— Alex K., DevOps Engineer</strong></p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The 24/7 support saved us during a critical outage. Lifesavers!"</p>
+                    <p><strong>— Sarah T., IT Manager</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="features" style="padding: 4rem 0;">
+        <div class="container">
+            <h2 style="text-align: center;">Frequently Asked Questions</h2>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <h3>Is admin access included?</h3>
+                <p>Yes! All plans come with full administrator privileges.</p>
+                <h3>Can I upgrade/downgrade later?</h3>
+                <p>Absolutely—scaling is instant with no downtime.</p>
+                <h3>Do you offer refunds?</h3>
+                <p>Yes—7-day money-back guarantee on all plans.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="hero" style="padding: 3rem 0; background: var(--accent);">
+        <div class="container">
+            <h2>Ready to Boost Your Productivity?</h2>
+            <a href="#pricing" class="cta-button" style="background: white; color: var(--accent);">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo" style="margin-bottom: 1rem;">TurboRDP</div>
+            <div class="footer-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+                <a href="#">Affiliates</a>
+            </div>
+            <p>© 2024 TurboRDP. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
